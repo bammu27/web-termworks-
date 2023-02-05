@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
+body{
+    text-align:center;
+    background-color: black;
+}
+div{display:block;position:absolute}
+
+.container{
+	width:320px;
+	height:320px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+   
+	}
+
+h1{
+	
+	
+	margin:0;
+	padding:0;
+	display:flex;
+	font-family:'Titan One',cursive;
+	font-size:90px;
+	font-weight:700;
+	flex-flow:row wrap;
+	align-content:center;
+	justify-content:center;
+    animation: blobs 5s infinite alternate;
+	}
+
+h1 span{width:100%;position:relative}
+
+
+@keyframes blobs{
+	0%{color:violet;}
+	20%{color: cadetblue;}
+	40%{color: coral;}
+	60%{color: darkseagreen;}
+	80%{color: darkviolet;}
+    100%{color: deeppink;}
+}
+
+.transition{
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(aqua,blue);
+    transform: width 10s background-image 10s heigth 10s border-radius 10s;
+    top:70%;
+	left:45%;
+
+  
+
+}
+.transition:hover{
+    background-color: rgb(222, 63, 6);
+    width: 200px;
+    background-image: linear-gradient(orange,rgb(170, 255, 105),hotpink);
+    height: 200px;
+	border-radius: 50%;
+}
