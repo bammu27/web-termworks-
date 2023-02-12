@@ -5,53 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Validation form</title>
-        <link rel="stylesheet" href="tw6.css">
-        <style>
-          body{
-            background-color: black;
-            color: white;
-          }
-          
-          .form{
-
-            
-            width: 20%;
-            background-color: cadetblue;
-    
-            
-          }
-          input{
-
-            margin: 10px;
-            padding: 10px;
-            display: block;
-            width: 30%;
-           
-            
-           
-          }
-          button{
-            
-
-            padding: 5px;
-            margin: 5px;
-            background-color: rgb(255, 68, 0);
-            
-          }
-          
-        </style>
+        <link rel="stylesheet" href="rw6_style.css">
+        
     </head>
     <body>
         <div class="form1">
-          <h1 id="headlin1">Validation of form</h1>
+          <h1 id="headlin1" >Validation of form</h1>
             <form name="form" onsubmit="return validateForm()">
-                <label for="">name</label><br>
-                <input type="text" name="name" placeholder=" enter your Name">
-                <label for="">email</label><br>
-                <input type="email" name="email" placeholder=" Enter your Email">
+                <label for="">Name</label><br>
+                <input type="text" name="name" placeholder=" Enter your Name"><br>
+                <label for="">Email</label><br>
+                <input type="email" name="email" placeholder=" Enter your Email"><br>
                 <label for="">Password</label><br>
-                <input type="password" name="password" placeholder="Enter your Password">
-                <button>submit</button>
+                <input type="password" name="password" placeholder="Enter your Password"><br>
+                <button>Submit</button>
             </form>
         </div>
         <script>
